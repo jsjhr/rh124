@@ -1,3 +1,7 @@
 # rh124
-notas adicionales del curso
-Jesús Arriola
+- slides
+- materiales
+- notas adicionales del curso
+
+Jesús Arriola Villarreal
+piracarter@gmail.com
