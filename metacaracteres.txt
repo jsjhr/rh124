@@ -1,0 +1,19 @@
+> 	Output redirection
+>> 	Output redirection (append)
+< 	Input redirection
+* 	File substitution wildcard; zero or more characters
+? 	File substitution wildcard; one character
+[ ] 	File substitution wildcard; any character between brackets
+`cmd` 	Command Substitution
+$(cmd) 	Command Substitution
+| 	The Pipe (|)
+; 	Command sequence, Sequences of Commands
+[ ] 	File substitution wildcard; any character between brackets
+|| 	OR conditional execution
+&& 	AND conditional execution
+( ) 	Group commands, Sequences of Commands
+& 	Run command in the background, Background Processes
+# 	Comment
+$ 	Expand the value of a variable
+\ 	Prevent or escape interpretation of the next character
+<< 	Input redirection 
