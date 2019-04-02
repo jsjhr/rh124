@@ -1,0 +1,12 @@
+# EJEMPLO: Crear un usuario (soporte) que pueda ejecutar los siguientes comandos
+# a nombre del root:
+# systemctl restart rsyslog
+# systemctl restart firewalld
+# systemctl restart crond
+
+useradd soporte
+passwd soporte # configurar password redhat
+
+Cmnd_Alias SOPORTE_COMMANDS = /usr/bin/systemctl restart rsyslog, /usr/bin/systemctl restart firewalld, /usr/bin/systemctl restart crond
+
+soporte ALL=(ALL) PASSWD: SOPORTE_COMMANDS
