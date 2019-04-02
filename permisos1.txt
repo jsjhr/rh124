@@ -3,3 +3,10 @@ do
 useradd $user
 done
 
+groupadd ricardo
+groupadd mertz
+
+usermod -aG ricardo lucy
+usermod -aG ricardo ricky
+usermod -aG mertz ethel
+usermod -aG mertz fred
