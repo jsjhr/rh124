@@ -10,3 +10,13 @@ usermod -aG ricardo lucy
 usermod -aG ricardo ricky
 usermod -aG mertz ethel
 usermod -aG mertz fred
+
+chown -v ricky:ricardo testing
+chmod -v 775 testing/
+ls -ld testing/
+
+touch lfile1 lfile2 rfile1 rfile2
+
+chmod 664 lfile1 ; chmod 646 lfile2; chmod 664 rfile1; chmod 640 rfile2
+chown lucy:lucy lfile1; chown lucy:ricardo lfile2; chown ricky:ricardo rfile1; chown ricky:ricardo rfile2;
+
