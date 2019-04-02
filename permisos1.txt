@@ -12,8 +12,10 @@ usermod -aG mertz ethel
 usermod -aG mertz fred
 
 chown -v ricky:ricardo testing
-chmod -v 775 testing/
-ls -ld testing/
+chmod -v 775 /testing
+ls -ld /testing
+
+cd /testing
 
 touch lfile1 lfile2 rfile1 rfile2
 
