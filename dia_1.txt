@@ -4,3 +4,23 @@ echo $(echo `date +%s` + 3600 | bc)
 
 # Sustitucion de comandos anidada invalida
 echo `echo `date +%s` + 3600 | bc`
+
+# Ubicacion de la BD de Man
+
+FILES         top
+       /usr/local/etc/man_db.conf
+              man-db configuration file.
+
+       /var/cache/man/index.(bt|db|dir|pag)
+              An FHS compliant global index database cache.
+
+       Older locations for the database cache included:
+
+       /usr/man/index.(bt|db|dir|pag)
+              A traditional global index database cache.
+
+       /var/catman/index.(bt|db|dir|pag)
+              An alternate or FSSTND compliant global index database cache
+              
+#              
+
