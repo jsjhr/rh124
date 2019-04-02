@@ -25,3 +25,10 @@ sudo /usr/bin/systemctl restart rsyslog
 
 # no se puede 
 sudo /usr/bin/systemctl reboot
+
+
+FREEIPA Para autenticacion centralizada
+=======================================
+https://www.freeipa.org/page/Demo
+Las credenciales vienen en la pagina.
+admin:Secret123
