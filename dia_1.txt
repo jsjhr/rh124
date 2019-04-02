@@ -1,0 +1,6 @@
+
+# Sustitucion de comandos anidada valida
+echo $(echo `date +%s` + 3600 | bc)
+
+# Sustitucion de comandos anidada invalida
+echo `echo `date +%s` + 3600 | bc`
