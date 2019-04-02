@@ -1,0 +1,5 @@
+for user in lucy ricky ethel fred 
+do
+useradd $user
+done
+
