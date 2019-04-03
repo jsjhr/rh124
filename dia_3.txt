@@ -1,0 +1,51 @@
+Procesos
+==========
+
+En espera
+
+S TASK_INTERRUPTIBLE: El proceso se encuentra en espera de que se de cierta condicion, solicitud de hardware.
+D TASK_UNINTERRUPTIBLE: El proceso se encuentra en Espera, pero no responde a señales, porque puede derivar en un
+  estado imprevisto del dispositivo.
+K. TASK_KILLABLE: Se encuentra en espera de recibir una señal de anulacion.
+
+man ps:
+ - para buscar la explicacion de la columna STAT
+ 
+VSZ - Virtual Set Size
+The Virtual Set Size is a memory size assigned to a process ( program ) during the initial execution. The Virtual Set Size memory is simply a number of how much memory a process has available for its execution.
+
+RSS - Resident Set Size
+As oppose to VSZ ( Virtual Set Size ), RSS is a memory currently used by a process. This is a actual number in kilobytes of how much RAM the current process is using.
+
+
+WCHAN Nombre de la funcion del kernel donde esta el proceso en espera
+cat /boot/System.map-3.10.0-957.1.3.el7.x86_64
+
+
+Trabajos y sesiones
+- Control de Trabajos. Caracteristica de la shell que permite ejecutar y administrar multiples comandos desde una sola instancia de shell:
+
+- Solo un trabajo puede leer entradas y señales generadas por el teclado desde una ventana de terminal especifica por vez.
+ Esto se llama procesos en primer plano.
+
+- Un proceso en segundo plano. Es un miembro de cualquier otro trabajo asociado con el terminal. Los procesos en segundo plano no pueden leer datos, ni interrupciones (CTRL-C, CRTL-Z) de stdin, pero pueden escribir en el terminal.
+ Estos trabajos pueden suspenderse 
+
+ Un proceso en primer plano, puede tener procesos en segundo plano. o procesos en primer plano
+
+
+Comando w
+IDlE: tiempo ocioso
+JCPU: Tiempo de cpu usado por todos los procesos de la terminal
+PCPU: tiempo de cpu usado por el proceso de la columna WHAT.
+
+init - > systemd
+
+Organizacion de las unidades en:
+services
+targets
+sockets
+timers
+mount
+slice
+snapshot
