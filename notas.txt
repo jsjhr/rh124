@@ -112,3 +112,9 @@ Simultaneamente en otra consola revisar el archivo de log
 # popd
 # popd
 # popd
+
+
+Obtener suscripcion de rehdat developer
+
+1 https://developers.redhat.com/
+2 Clic en el enlace JOIN RedHAt developer
